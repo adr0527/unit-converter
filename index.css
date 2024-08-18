@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* css reset */
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* vars */ 
+:root { 
+    /* Font */ 
+    --FF: "Inter", sans-serif;
+    --FS-TITLE: 40px;
+    --FS-NORMAL: 20px; 
+
+    /* color */ 
+    --TEXT-COLOR: #fff; 
+    --ALT-TEXT-COLOR: #CCC1FF; 
+    --UPPER-BG-COLOR: #6943FF; 
+    --LOWER-BG-COLOR: #1F2937; 
+    --ALT-BG-COLOR: #273549; 
+}
+
+/* generic styles */ 
+body { 
+    font-family: var(--FF);
+}
+
+/* Upper container */ 
+.uppercontainer { 
+    background-color: var(--UPPER-BG-COLOR);
+    width: 100%; 
+    height: 335px; 
+    color: var(--TEXT-COLOR); 
+    text-align: center;
+}
+
+#titleEl { 
+    padding-top: 0.8em;
+    font-size: var(--FS-TITLE);
+    font-weight: 800;
+    padding-bottom: 0.8em;
+}
+
+#inputEl { 
+    border: 2px solid #B295FF; 
+    width: 117px;
+    height: 103px;
+    background: transparent; 
+    color: var(--TEXT-COLOR); 
+    font-size: 58px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#convertBtn {
+    border: 0; 
+    display: block;
+    margin: auto; 
+    width: 117px;
+    height: 42px;
+    margin-top: 24px;
+    border-radius: 5px; 
+    background-color: #fff;
+    font-size: var(--FS-NORMAL); 
+    font-weight: 500;
+    font-family: inherit;
+}
+
+/* lower container */ 
+.lowercontainer { 
+    background-color: var(--LOWER-BG-COLOR);
+    height: calc(100vh - 335px);
+    display: grid;
+    grid-template-rows: repeat(3, calc(1fr - 2em));
+}
+
+.lowercontainer div { 
+    background-color: var(--ALT-BG-COLOR);
+    text-align: center;
+    margin: 0 2em;
+    margin-top: 2em;
+    border-radius: 10px 0 0 0;
+}
+
+.lowercontainer h3 { 
+    color: #CCC1FF;
+    font-size: var(--FS-NORMAL);
+    font-weight: 600;
+    padding-top: 1.5em;
+    font-size: 20px;
+}
+
+#massDiv { 
+    margin-bottom: 2em;
+}
+
+.lowercontainer div p {
+    color: var(--TEXT-COLOR); 
+    padding-top: 1.5em;
+    font-size: 16px;
+    font-weight: 300;
+}
